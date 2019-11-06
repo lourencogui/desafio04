@@ -1,0 +1,149 @@
+body {
+  background: #ddd;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+  overflow-y: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+.header {
+  background: #3578e5;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  padding: 5px 25px;
+}
+
+.header-left span {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 25px;
+  font-size: 15px;
+}
+
+.header-right p {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.post-list {
+  height: 700px;
+  max-width: 400px;
+  /* left: 50%; */
+  /* margin-left: 35%; */
+  padding: 5px;
+  margin: 80px auto;
+  overflow-y: auto;
+}
+
+.post {
+  background: #fff;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 10px 0px;
+  box-shadow: 2px 2px 2px 2px #bbb;
+}
+
+.post-info {
+  margin-bottom: 10px;
+}
+
+.post-info-owner {
+  display: flex;
+  flex-direction: row;
+}
+
+.owner-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px 5px;
+}
+
+.owner-name p {
+  margin: 1px;
+}
+
+.owner-name :nth-child(1) {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.owner-name :nth-child(2) {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.post-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.post-info-content {
+  margin-top: 10px;
+}
+
+.post-info-content p {
+  font-size: 14px;
+}
+
+.post-space {
+  width: 100%;
+  height: 1px;
+  background: #eee;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
+}
+
+.comment-avatar {
+  margin-right: 10px;
+}
+
+.comment-avatar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.comment-content {
+  background: #eee;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.comment p {
+  font-size: 13px;
+}
